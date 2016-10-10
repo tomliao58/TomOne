@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/scrollView1">
+    <LinearLayout
+        p1:orientation="vertical"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="match_parent"
+        p1:id="@+id/linearLayout1"
+        p1:padding="5dp">
+        <ImageView
+            p1:src="@android:drawable/ic_menu_gallery"
+            p1:layout_width="350dp"
+            p1:layout_height="200dp"
+            p1:id="@+id/poiImageView"
+            p1:padding="3dp"
+            p1:layout_gravity="center_horizontal"
+            p1:scaleType="fitCenter"
+            p1:visibility="gone" />
+        <TextView
+            p1:text="景點名稱"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/textView1" />
+        <EditText
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/nameEditText"
+            p1:inputType="textCapWords" />
+        <TextView
+            p1:text="景點記事"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/textView2" />
+        <EditText
+            p1:inputType="textMultiLine|textCapSentences"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/descrEditText" />
+        <TextView
+            p1:text="地址"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/textView3" />
+        <EditText
+            p1:inputType="textMultiLine"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/addrEditText" />
+        <TableLayout
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:layout_width="match_parent"
+            p1:layout_height="match_parent"
+            p1:id="@+id/tableLayout1"
+            p1:stretchColumns="*">
+            <TableRow
+                p1:id="@+id/tableRow1">
+                <TextView
+                    p1:text="緯度"
+                    p1:layout_column="0"
+                    p1:id="@+id/textView9" />
+                <TextView
+                    p1:text="經度"
+                    p1:layout_column="1"
+                    p1:id="@+id/textView10" />
+            </TableRow>
+            <TableRow
+                p1:id="@+id/tableRow2">
+                <EditText
+                    p1:inputType="numberDecimal|numberSigned"
+                    p1:layout_column="0"
+                    p1:id="@+id/latEditText" />
+                <EditText
+                    p1:inputType="numberDecimal|numberSigned"
+                    p1:layout_column="1"
+                    p1:id="@+id/longEditText" />
+            </TableRow>
+        </TableLayout>
+        <LinearLayout
+            p1:orientation="horizontal"
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:layout_width="wrap_content"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/linearLayout2"
+            p1:paddingTop="10dp"
+            p1:paddingBottom="10dp"
+            p1:layout_gravity="center_horizontal">
+            <ImageButton
+                p1:src="@drawable/ic_navizon"
+                p1:layout_width="wrap_content"
+                p1:layout_height="match_parent"
+                p1:id="@+id/locationImageButton" />
+            <ImageButton
+                p1:src="@drawable/map"
+                p1:layout_width="wrap_content"
+                p1:layout_height="match_parent"
+                p1:id="@+id/mapImageButton" />
+            <ImageButton
+                p1:src="@drawable/ic_camera"
+                p1:id="@+id/photoImageButton"
+                p1:layout_width="wrap_content"
+                p1:layout_height="wrap_content"
+                p1:maxWidth="10dp"
+                p1:maxHeight="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
